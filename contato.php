@@ -97,6 +97,29 @@
                                                 </div>
                                             </div>
                                         </form>
+                                        <script src="https://smtpjs.com/v3/smtp.js"></script>
+                                        <script>
+                                            var btn =document.getElementById('btn');
+                                            btn.addEventListener('click',function(e){
+                                                e.preventDefault()
+                                                var name = document.getElementById('name').value;
+                                                var email = document.getElementById('email').value;
+                                                var subject = document.getElementById('subject').value;
+                                                var message = document.getElementById('message').value;
+                                                var body = 'name: ' + name + '<br/> email: ' + email + '<br/> subject: ' + subject + '<br/> message: ' + message;
+                                            
+                                                Email.send({
+                                                    SecureToken : "3ad3fb09-0292-4e30-b52d-41aec8db12ae",
+                                                    To : 'danielombardo2002@gmail.com',
+                                                    From : "emailptesteprog@gmail.com",
+                                                    Subject : "Mensagem de contato",
+                                                    Body : body
+                                                }).then(
+                                                message => alert(message)
+                                                );
+                                            
+                                            })
+                                        </script>
                                     </div>
                                 </div>
                             </div>
