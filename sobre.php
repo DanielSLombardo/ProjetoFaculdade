@@ -43,11 +43,14 @@
                             <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Games</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="gow.php">God Of War</a></li>
-                                <li><a class="dropdown-item" href="mine.php">Minecraft</a></li>
                                 <li><a class="dropdown-item" href="bb.php">Bloodborne</a></li>
                                 <li><a class="dropdown-item" href="er.php">Elden Ring</a></li>
+                                <li><a class="dropdown-item" href="gow.php">God Of War</a></li>
+                                <li><a class="dropdown-item" href="gta.php">GTA 5</a></li>
+                                <li><a class="dropdown-item" href="hollow.php">Hollow Knight</a></li>
+                                <li><a class="dropdown-item" href="mine.php">Minecraft</a></li>
                                 <li><a class="dropdown-item" href="rdr.php">Red Dead Redemption 2</a></li>
+                                <li><a class="dropdown-item" href="terraria.php">Terraria</a></li>
                                 <li><a class="dropdown-item" href="witcher.php">The Witcher 3</a></li>
                             </ul>
                             </li>

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="icon" href="img/icon.png" type="image/png">
+    <script defer src="app.js"></script>
 </head>
 <body>
     <div class="page-container">
@@ -43,11 +44,14 @@
                             <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Games</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="gow.php">God Of War</a></li>
-                                <li><a class="dropdown-item" href="mine.php">Minecraft</a></li>
                                 <li><a class="dropdown-item" href="bb.php">Bloodborne</a></li>
                                 <li><a class="dropdown-item" href="er.php">Elden Ring</a></li>
+                                <li><a class="dropdown-item" href="gow.php">God Of War</a></li>
+                                <li><a class="dropdown-item" href="gta.php">GTA 5</a></li>
+                                <li><a class="dropdown-item" href="hollow.php">Hollow Knight</a></li>
+                                <li><a class="dropdown-item" href="mine.php">Minecraft</a></li>
                                 <li><a class="dropdown-item" href="rdr.php">Red Dead Redemption 2</a></li>
+                                <li><a class="dropdown-item" href="terraria.php">Terraria</a></li>
                                 <li><a class="dropdown-item" href="witcher.php">The Witcher 3</a></li>
                             </ul>
                             </li>
@@ -71,29 +75,28 @@
                                         <h3>Entre em Contato</h3>
                                     </div>
                                     <div class="card-body">
-                                        <form>
+                                        <form action="https://formsubmit.co/ajax/nickolas@tigercodes.com.br"method="POST" data-form>
                                             <div>
                                                 <div class="mb-3">
-                                                    <label>Nome</label>
-                                                    <input type="text" id="name" class="form-control" autocomplete="off" required>
+                                                    <label for="nome">Nome</label>
+                                                    <input type="text" name="nome" id="nome" class="form-control" required/>
                                                 </div>
                                             </div>
                                             <div>
                                                 <div class="mb-3">
-                                                    <label>Email</label>
-                                                    <input type="emaild" id="email" class="form-control" autocomplete="off" required>
+                                                    <label for="email">E-mail</label>
+                                                    <input type="email" name="email" id="email" class="form-control" required/>
                                                 </div>
                                             </div>
                                             <div>
                                                 <div class="mb-3">
-                                                    <label>Assunto</label>
-                                                    <input type="text" id="subject" class="form-control" autocomplete="off">
-                                                    <textarea id="message" cols="48" rows="5" placeholder="Escreva sua mensagem aqui."></textarea>
+                                                    <label for="mensagem">Mensagem</label>
+                                                    <textarea name="mensagem" id="mensagem" class="form-control" required></textarea>
                                                 </div>
                                             </div>
                                             <div>
                                                 <div class="mb-3">
-                                                    <button id="btn" class="btn btn-primary">Enviar</button>
+                                                    <button id="btn" class="btn btn-primary" type="submit" data-button>Enviar</button>
                                                 </div>
                                             </div>
                                         </form>
